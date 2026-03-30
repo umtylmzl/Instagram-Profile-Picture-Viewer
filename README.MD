@@ -1,62 +1,17 @@
-# InstaPP – Instagram Profil Resmi Görüntüleyici
+# InstaPP – Instagram Profile Picture Viewer
 
-**Umut Yılmaz** tarafından oluşturulmuştur · [github.com/umtylmzl](https://github.com/umtylmzl)
+InstaPP is an open-source PHP application designed to view and download Instagram profile pictures in HD quality.
 
-Instagram kullanıcılarının profil fotoğraflarını HD kalitesinde görüntüleyen ve indiren açık kaynaklı PHP scripti.
+## Quick Highlights
+- View and download profile pictures in HD
+- Fetch post, follower, and following counts
+- Multi-layer data fetching (Apify + Instagram endpoint + fallback parsing)
+- Modern, responsive UI built with Tailwind CSS
+- API-ready architecture for mobile and third-party integrations
 
----
+## Why InstaPP?
+InstaPP combines a clean user experience with a robust fallback strategy to deliver Instagram profile data quickly and reliably across devices.
 
-## Özellikler
-
-- Profil fotoğrafını tam/HD çözünürlükte görüntüleme ve indirme
-- Gizli profil ve sizi engelleyen hesaplar için de çalışır
-- Üç katmanlı veri çekme: Apify → Instagram API → HTML ayrıştırma
-- Tailwind CSS ile modern, mobil uyumlu arayüz
-- Reklam alanları hazır (AdSense vb. kolay entegrasyon)
-- Kullanıcı adı veya profil linki ile arama
-
----
-
-## Kurulum
-
-1. Dosyaları web sunucunuza (Apache/Nginx + PHP 7.4+) yükleyin.
-2. `mod_rewrite` aktif olmalıdır (`.htaccess` URL yönlendirmesi için).
-3. *(İsteğe bağlı)* Apify entegrasyonu için ortam değişkeni tanımlayın:
-
-```bash
-APIFY_TOKEN=your_apify_token_here
-```
-
-4. Tarayıcıdan projenin klasörüne gidin — hepsi bu kadar.
-
----
-
-## Dosya Yapısı
-
-```
-├── index.php          # Ana uygulama (veri çekme mantığı)
-├── ui-tailwind.php    # Arayüz şablonu (Tailwind CSS)
-├── hakkimizda.php     # Hakkında sayfası
-├── img-proxy.php      # Resim proxy (CORP sorununu çözer)
-├── .htaccess          # URL yönlendirme kuralları
-├── sweetalert2.all.min.js
-└── UmutYilmaz.png     # Favicon
-```
-
----
-
-## Gereksinimler
-
-- PHP 7.4+
-- Apache + mod_rewrite **veya** Nginx (rewrite kuralı ile)
-- cURL uzantısı (önerilir, yoksa `file_get_contents` kullanılır)
-
----
-
-## Lisans
-
-MIT — dilediğiniz gibi kullanabilir, geliştirebilir ve dağıtabilirsiniz.
-
----
-
-*© 2026 [Umut Yılmaz](https://github.com/umtylmzl)*
+## Author
+Umut Yılmaz  
+GitHub: https://github.com/umtylmzl
